@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+}
+
+p {
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 10em;
+  letter-spacing: 14px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+.item{
+  margin: 0 auto;
+  max-width: 1140px;
+}
+.items a{
+  display:inline-block;
+  text-decoration:none;
+  color:white;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight:400;
+  margin:0 20px;
+  height: 20px;
+  overflow: hidden;
+}
+.items a span{
+  display: inline-block;
+  position:relative;
+  transition: transform 500ms;
+  -webkit-transition: -webkit-transform 500ms;
+  -moz-transition: transform 500ms;
+
+}
+.items a span:after{
+  content: attr(data-hover);
+  position: absolute;
+  top: -30px;
+  left:0;
+  transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0,0,0);
+}
+.items a:hover span,
+.items a:focus span {
+  transform: translateY(30px);
+  -webkit-transform: translateY(30px);
+  -moz-transform: translateY(30px);
+}
+
+  </head>
+  <body>
+    <header>
+      <p>Jesse Pickman</p>
+      <div id="#container">
+        <section class="items">
+          <nav class="main-nav">
+            <a href="#"><span data-hover="Home">Inicio</span></a>
+            <a href="#"><span data-hover="Proyects">Proyectos</span></a>
+            <a href="#"><span data-hover="About">Info</span></a>
+            <a href="#"><span data-hover="Hello">Galeria </span></a>
+            <a href="#"><span data-hover="Blog">contacto</span></a>
+          </nav>
+        </section>
+        <aside class="sidebar-left">
+          <pre>
+      <blockquote>Facebook
+      </blockquote>
+      <blockquote>Instagram
+      </blockquote>
+      <blockquote>Tweet
+      </blockquote>
+      <blockquote>Youtube
+      </blockquote>
+      </pre>
+
+        <section>
+        </aside>
+        <figure><img src ="https://www.maxpixel.net/static/photo/1x/Rap-Microphone-Hip-Hop-Concert-Music-625445.jpg"/></figure>
+        <article><p>Parrafo de ejemplo</p>
+          <footer><p>Comentarios</p></footer></article>
+
+        <article><p>Parrafo de ejemplo</p>
+          <footer><p>Comentarios</p></footer></article>
+
+        <article><p>Parrafo de ejemplo</p>
+          <footer><p>Comentarios</p></footer></article>
+        </section>
+
+      <div class="page-wrap">
+        <h1>Derechos reservados</h1>
+        <h2>Contacto</h2>
+
+        <button id="add">Mas informacion</button>  
+
+      </div>
+
+      <footer class="site-footer">
+        Estudio 
+      </footer>
+
+        
+      </div>
+
+    </header>
+  </body>
+  <footer>
+  </footer>
+</html>
